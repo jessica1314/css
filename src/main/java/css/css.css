@@ -1,0 +1,393 @@
+/*p {*/
+/*    width: 200px;*/
+/*    text-indent: 20px;*/
+/*}*/
+
+/*.p {*/
+/*    letter-spacing: 2px;*/
+/*    !*text-align: center; !*行级元素才可以内容有效果；*!*!*/
+/*}*/
+/*p.u {*/
+/*    text-transform: uppercase;*/
+/*}*/
+
+/*p.c {*/
+/*    text-transform: capitalize;*/
+/*}*/
+
+/*p.l {*/
+/*    text-transform: lowercase;*/
+/*    white-space: normal; !*默认 合并成一个空白格*!*/
+/*    white-space: pre; !*不换行*!*/
+/*    white-space: pre-wrap; !*超过父容器，会换行*!*/
+/*    white-space: nowrap; !*只有遇到br才换行*!*/
+/*}*/
+/*p.big {*/
+/*    !*font-size: 30px;*!*/
+/*    !*font-style: italic; !*字体是否斜体*!*!*/
+/*    !*font-weight: bolder; !*字体粗细*!*!*/
+/*    !*font-family: Times New Roman; !*哪种字体*!*!*/
+/*    cursor: crosshair;!*鼠标以上的样式*!*/
+/*    font: italic bolder 30px  "微軟正黑體 Light";!*是否斜体 粗细 大小 哪种字体*!*/
+/*}*/
+
+/*p.small {*/
+/*    font-size: 50%;*/
+/*}*/
+
+/*p.small2 {*/
+/*    font-size: 0.5em;*/
+/*}*/
+/*table.t1 {*/
+/*    table-layout: auto; !*文本默认是按照td的文本大小来自适应* 只对英文字母有效  !*!*/
+/*    border-collapse: separate;*/
+/*}*/
+
+/*table.t2 {*/
+/*    table-layout: fixed;*/
+/*    border-collapse: collapse;*/
+/*}*/
+/*.solid {*/
+/*    border-style: solid;*/
+/*}*/
+
+/*.dotted {*/
+/*    border-style: dotted;*/
+/*}*/
+
+/*.dashed {*/
+/*    border-style: dashed;*/
+/*}*/
+
+/*.double {*/
+/*    border-style: double;*/
+/*}*/
+
+/*p {*/
+/*    !*border-style: dashed;*!*/
+/*    !*border-color: red;*!*/
+/*    !*border-width: 10px;*!*/
+/*    border: red solid;*/
+/*}*/
+
+/*div.lefttop {*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    border-left-style: solid;*/
+/*    border-top-style: solid;*/
+/*    border-left-color: red;*/
+/*    border-top-color: yellow;*/
+/*    border-left-width: 50px;*/
+/*    border-top-width: 50px;*/
+/*    background-color: lightgray;*/
+/*}*/
+
+/*div.alldirection {*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    border-left-style: solid;*/
+/*    border-top-style: solid;*/
+/*    border-right-style: solid;*/
+/*    border-bottom-style: solid;*/
+/*    border-left-color: red;*/
+/*    border-top-color: yellow;*/
+/*    border-right-color: blue;*/
+/*    border-bottom-color: green;*/
+/*    border-left-width: 50px;*/
+/*    border-top-width: 50px;*/
+/*    border-right-width: 50px;*/
+/*    border-bottom-width: 50px;*/
+/*    background-color: lightgray;*/
+/*}*/
+
+/*td {*/
+/*    width: 25%;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.tr4 {*/
+/*    !*background-color: gray;*!*/
+/*    border-top-color: red;*/
+/*    border-bottom-color: red;*/
+/*    border-top-width: 15px;*/
+/*    border-bottom-width: 15px;*/
+/*    border-top-style: solid;*/
+/*    border-bottom-style: solid;*/
+
+/*}*/
+/*table{*/
+/*    border-collapse:collapse;*/
+/*    width:80%;*/
+/*    !*border: 1px red solid;*!*/
+/*}*/
+/*tr.odd{*/
+/*    background-color:#f8f8f8;*/
+/*}*/
+/*tr.head{*/
+/*    border-bottom-width: 2px;*/
+/*}*/
+/*tr{*/
+/*    border-bottom-style: solid;*/
+/*    border-bottom-width: 1px;*/
+/*    border-bottom-color: lightgray;*/
+/*    height:35px;*/
+/*}*/
+
+/*td{*/
+/*    width:25%;*/
+/*    text-align:center;*/
+/*}*/
+/*div {*/
+/*    width: 0px;*/
+/*    height: 0px;*/
+/*    border-top-style: solid;*/
+/*    border-top-color: red;*/
+/*    border-top-width: 10px;*/
+/*    border-left-style: solid;*/
+/*    border-left-color: black;*/
+/*    border-left-width: 10px;*/
+/*    border-bottom-style: solid;*/
+/*    border-bottom-color: blanchedalmond;*/
+/*    border-bottom-width: 10px;*/
+/*    border-right-style: solid;*/
+/*    border-right-color: blue;*/
+/*    border-right-width: 10px;*/
+/*}*/
+/*table {*/
+/*    width: 70%;*/
+/*    !*border-collapse: separate;*!*/
+/*}*/
+
+/*td {*/
+/*    text-align: center;*/
+/*    border-bottom: blue 5px solid;*/
+/*}*/
+
+/*.red {*/
+/*    display: block;*/
+/*    border: 5px solid red;*/
+/*    background-color: green;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.pad-left {*/
+/*    !*align-content: center;*!*/
+/*    text-align: center;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    border: 5px solid red;*/
+/*    background-color: blue;*/
+/*    !*padding: 10px;*!*/
+/*    margin: 0 auto;*/
+/*}*/
+/*.box{*/
+/*     width:70px;*/
+/*     padding:15px;*/
+/*     margin: 10px;*/
+/* }*/
+
+/*div{*/
+/*    border:1px solid gray;*/
+/*    font-size:70%;*/
+/*}*/
+/*a:link {color: #FF0000}*/
+/*a:visited {color: #00FF00}*/
+/*a:hover {color: #FF00FF}*/
+/*a:active {color: #0000FF}*/
+/*a {*/
+/*    text-decoration: none;*/
+/*}*/
+div.nocontinue span {
+    float: left;
+    border-bottom: 2px solid lightgray;
+}
+#abc {
+    /*左右不需要有浮动元素*/
+    clear:both;
+}
+/*#div1 {*/
+/*    position: relative;*/
+/*    height: 500px;*/
+/*    width: 500px;*/
+/*    background-color: yellow;*/
+/*}*/
+
+/*#div2 {*/
+/*    !*这个元素始终在父元素的底部，绝对定位，父元素相对定位！*!*/
+/*    width: 100px;*/
+/*    border: 1px solid gray;*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 200px;*/
+/*}*/
+
+/*.left {*/
+/*    width: 200px;*/
+/*    float: left;*/
+/*    background-color: pink*/
+/*}*/
+
+/*.right {*/
+/*    width: 200px;*/
+/*    float: right;*/
+/*    background-color: pink*/
+/*}*/
+
+/*.center {*/
+/*    !*margin: 0 200px;*!*/
+/*    background-color: lightblue*/
+/*}*/
+
+/*#d {*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    !*vertical-align: center;*!*/
+/*    !*display: inline-block;*!*/
+/*}*/
+
+/*img {*/
+/*    padding: 50px;*/
+/*}*/
+
+/*div {*/
+/*    border: solid 1px lightskyblue;*/
+/*}*/
+
+/*}*/
+/*#d {*/
+/*   padding: 30px 0px;!*nei bian ju *!*/
+/*}*/
+
+/*div {*/
+/*    border: solid 1px lightskyblue;*/
+/*}*/
+
+/*.left {*/
+/*    float: left;*/
+/*    width: 200px;*/
+/*    background-color: pink;*/
+/*}*/
+
+/*.right {*/
+/*    !*float: right;*!!**!*/
+/*    height: 200px;*/
+/*    overflow: hidden; !*清除浮动,就是不包含浮动元素的意思*!*/
+/*    background-color: yellow;*/
+/*}*/
+
+/*div {*/
+/*    border: 1px solid lightgray;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*table {*/
+/*    display: inline-table; !*可以使块元素能够变成一行 也可以使航元素变成边 设置宽高*!*/
+/*    margin-left: 30px;*/
+/*}*/
+
+/*.d1 {*/
+/*    display: inline;*/
+/*    border: 1px solid gray;*/
+/*}*/
+
+/*span {*/
+/*    display: inline-block;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    border: 1px solid gray;*/
+/*    margin: 10px;*/
+/*}*/
+
+/*.d {*/
+/*    display: block; !*自动前后换行  独占一行*!*/
+/*}*/
+
+/*div#floatingDiv {*/
+/*    width: 200px;!*设置父容器带下*!*/
+/*}*/
+
+/*div#floatingDiv div {*/
+/*    !*按照从左漂浮 但是超过父容器大小 会换行！*!*/
+/*    float: left;*/
+/*}*/
+/*p {*/
+/*    width: 320px;*/
+/*}*/
+
+/*.pp {*/
+/*    clear: left;*/
+/*}*/
+
+/*.f {*/
+/*    float: right; !*漂浮在此位置的左边，后面的块元素就紧贴在后面啦*!*/
+/*}*/
+
+/*.p2 {*/
+/*    float: left;*/
+/*}*/
+
+/*.r {*/
+/*    !*没有大小*!*/
+/*    position: relative;*/
+/*    left: 0;*/
+/*    top: 0;*/
+/*}*/
+
+/*.a {*/
+/*    !*z-index: 当使用绝对定位时出现覆盖元素情况 使用 数值越大就放在上面*/
+/*        相对定位relative: 默认所有元素位置都是相对的定位；不会把该元素从原文档删掉 在原来文档位置基础上移动*!*/
+/*    position: absolute;*/
+/*    left: 150px;*/
+/*    top: 0px;*/
+/*    !*top: -50px;*!*/
+/*    !*z-index: -1; !*默认是覆盖下面的元素，设置为-1*!*!*/
+/*}*/
+
+/*.absdiv {*/
+/*    !*相对于最近的定位父容器位置偏移，如果没有就是body容器！*!*/
+/*    position: absolute;*/
+/*    left: 150px;*/
+/*    top: 50px;*/
+/*    width: 215px;*/
+/*    border: 1px solid blue;*/
+/*}*/
+
+/*.abs {*/
+/*    !*相当于该元素从原文档删除啦，后面的文档往前上升空间    *!*/
+/*    position: absolute;*/
+/*    !*定位是相对于最近一个已定位的父容器*!*/
+/*    top: 50px;*/
+/*    left: 150px;*/
+/*}*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: cornflowerblue;*/
+/*    cursor: pointer;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*div.menu {*/
+/*    !*text-align: center;*!*/
+/*    border-style: solid;*/
+/*    border-color: lightgray;*/
+/*    border-width: 1px;*/
+/*    width: 80px;*/
+/*    position: absolute;*/
+/*    left: 80px;*/
+/*    !*top: -120px;!*大概意思 位置;绝对定位相对于父元素的位置：*!*!*/
+/*    !*margin-left: 70px;*!*/
+/*}*/
+
+/*div.menu a {*/
+/*    display: block;*/
+/*    color: #888;*/
+/*    font-family: 宋体;*/
+/*    text-decoration: none;*/
+/*    text-align: center;*/
+/*    margin: 5px;*/
+/*}*/
+
+/*div.menu a:hover {*/
+/*    background-color: #f1f1f1;*/
+

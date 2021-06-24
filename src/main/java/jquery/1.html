@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="jquery.min.js"></script>
+    <script>
+        /*jquery 是js的框架，对js的一种封装，通过jquery可以方便访问html的元素*/
+        /*$(function (){ 文档加载时的操作}) 分两部分
+        * 1.$()
+        * 2.function(){} 合并一起就是为了防止页面元素节点加载完才能加载这些js里代码
+        * 也可以这样写
+        *   $(document).ready(function(){  })*/
+        // $(function () {
+        //     //不能输出文字？会覆盖文档
+        //     // console.log("dadsad");
+        //     // /*$("#id") 获取id的jquery对象 等价于 getelementsbyid的方法获取到的dom中的元素节点？还是不太一样
+        //     //  通过id选择节点元素*/
+        //     // alert("jquery对象" + $("#btn1"));
+        //     // alert("转换为dom" + $("#btn1")[0]);
+        //     // alert("通过id获取dom对象" + document.getElementById("btn1"));//还可以用get(0) jquery--> dom
+        //     // alert("dom转换为jquery对象" + $(document.getElementById("btn1")));
+        //     // alert("jquery对象" + $("#btn1"));
+        //     // /*添加点击click事件  一个是元素上绑定点击事件 一个是控制div的显示和隐藏操作
+        //     // * 不需要再元素上操作，html只显示，js再业务复杂的时候维护 容易*/
+        //     // $("#btn1").click(function () {
+        //     //     $("#d1").show(); //show()  hide() 元素显示和隐藏
+        //     // });
+        //     // $("#btn2").click(function () {
+        //     //     $("#d1").hide();
+        //     // $("#input1").addClass("pink"); //加上类样式名？
+        //     // console.log($("#input1").val());//获取文本框的value值
+        //     // console.log($("#d1").html());//这个结束包含元素内的子元素全部 内部包含的所有的页面元素
+        //     // console.log($("#d1").text());//这个结束包含元素内的只包含内容  去掉标签？  内部包含的所有文本内容？
+        //
+        // });
+        $(function () {
+            // $("#btn").click(function () {  //千万别忘记了id选择器前的#     样式选择器  .{}
+            //     /*标签选择器 $("div")   $(.sss) 类选择器  id选择器
+            //     * $("div#d1 span " ) ：选择id是d1的子元素下的span元素*/
+            //     /*当前页面元素 第一个div 和最后一个div
+            //     *  odd 基数的  even 偶数的 从基数0开始的 */
+            //     $("div:hidden").css({"color": "yellow", "background-color": "blue"});/*css(｛｝):里面放入多个样式对｛"color":"red","key":"value"｝*/
+            //     /*注意 div :visible 带个空格 是表示选择可见div下的元素？*/
+            //     $("div :visible").css({"color": "white", "background-color": "black"});/*css(｛｝):里面放入多个样式对｛"color":"red","key":"value"｝*/
+            // })
+            /*$(selector[attribute=value])  属性选择器 */
+            $("#b1").click(function () {
+                $("div[id]").toggleClass("border");
+            })
+            $("#b2").click(function () {
+                $("div[id='pink']").toggleClass("border");
+            })
+            $("#b3").click(function () {
+                $("div[id!='pink']").toggleClass("border");
+            })
+            $("#b4").click(function () {
+                $("div[id^='p']").toggleClass("border");
+            })
+            $("#b5").click(function () {
+                $("div[id$='k']").toggleClass("border");
+            })
+            $("#b6").click(function () {
+                $("div[id*='ee']").toggleClass("border");
+            })
+        });
+        // $(function () {
+        //     $("#btn1").click(function () {
+        //         $("#d1").show();
+        //     })
+        // });
+        // $("#btn2").click(function () {
+        //     $("#d1").hide();
+        // })
+    </script>
+    <!--使用jquery必须导入的jquery.min.js  压缩版 一对script标签-->
+
+
+</head>
+<body>
+<!--<button id="btn1" class="pink">显示</button>-->
+<!--<button id="btn2">隐藏</button>-->
+<!--<div id="d1">hello div1 <span class="sss">111111</span></div>-->
+<!--<div id="d2">hello div2 <span class="sss">22222</span></div>-->
+<button id="b1">给有id属性的div切换边框</button>
+<button id="b2">给id=pink的div切换边框</button>
+<button id="b3">给有id!=pink属性的div切换边框</button>
+<button id="b4">给有id以p开头的div切换边框</button>
+<button id="b5">给有id以k结尾的div切换边框</button>
+<button id="b6">给有id包含ee的div切换边框</button>
+<style>
+    .pink {
+        background-color: pink;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .border {
+        border: 1px blue solid;
+    }
+
+    button {
+        margin-top: 10px;
+        display: block;
+    }
+
+    div {
+        margin: 10px;
+    }
+
+    /*!*类选择器*!*/
+    /*.pink {*/
+    /*    background-color: pink;*/
+    /*}*/
+
+    /*!*id选择器 *!*/
+    /*#d1 {*/
+
+    /*}*/
+
+    /*!*标签选择器*!*/
+    /*button {*/
+
+    /*}*/
+
+</style>
+
+<!--<input id="input1" type="text" value="124">-->
+<!--<button id="btn">jquery选选择器</button>-->
+<div id="pink">
+    id=pink的div
+</div>
+
+<div id="green">
+    id=green的div
+</div>
+
+<div>
+    没有id的div
+</div>
+</body>
+</html>

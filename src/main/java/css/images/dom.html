@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom</title>
+    <style>
+        td {
+            border-bottom: 2px solid red;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        /*table {*/
+        /*   */
+        /*}*/
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>id</td>
+        <td>名称</td>
+        <td>血量</td>
+        <td>伤害</td>
+    </tr>
+    <tr class="tr1">
+        <td>1</td>
+        <td>gareen</td>
+        <td>340</td>
+        <td>58</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>teemo</td>
+        <td>320</td>
+        <td>76</td>
+    </tr>
+    <tr class="tr1">
+        <td>3</td>
+        <td>annie</td>
+        <td>380</td>
+        <td>38</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>deadbrother</td>
+        <td>400</td>
+        <td>90</td>
+    </tr>
+</table>
+
+<button onclick="show()">显示</button>
+<button onclick="hide()">隐藏</button>
+<div id="dom">目的对象</div>
+<input id="input1" type="text" class="class1 clas2 " placeholder="请输入账号">
+<button onclick="changeInnerhtml()">验证账号信息</button>
+<div id="result"></div>
+<script>
+    "use strict";
+    var elementsByClassName = document.getElementsByClassName("tr1");
+
+    for (var i = 0; i < elementsByClassName.length; i++) {
+        elementsByClassName[i].style.backgroundColor = "gray";
+    }
+
+    function show() {
+        var elementById = document.getElementById("dom");
+        elementById.style.width = "350px";
+        elementById.style.backgroundColor = "green";
+        elementById.style.visibility = "visible"; //可见 ：占文档空间   display:block 显示
+    }
+
+    function hide() {
+        var elementById = document.getElementById("dom");
+        elementById.style.visibility = "hidden";//元素 .style.display  hidden 隐藏    none 消失 不占元素空间
+    }
+
+    /*浏览器渲染就会加载js脚本，在这里可以修改页面元素的值*/
+    function sys(str) {
+        document.write(str);
+        document.write("<br>");
+    }
+
+    /*你看  js 函数在前面也可以直接访问全局变量var定义的*/
+    function changeInnerhtml() {
+        var i1 = document.getElementById("input1");/*别忘记了 要分号 除非作为函数参数*/
+        var value = i1.value;
+        //判断数值是否为整数；
+        var elementById = document.getElementById("result");
+        var r;
+        if (isNaN(Number(value))) {
+            r = "不是数字";
+        } else if (value.indexOf(".") !== -1) {
+            r = "输入为浮点数";
+            // return; //别忘记了return？ 运行就结束啦
+        } else {
+            r = "你好，你输入的整数位为" + value;
+        }
+        elementById.innerText = r;
+
+        // if (value.indexOf("a") === 0 || value.indexOf("A") === 0) {
+        //     document.getElementById("result").innerHTML = "账号已存在";
+        // } else {
+        //     document.getElementById("result").innerHTML = "账号注册成功";
+        // }
+        // var s;
+        // s = "id=" + i1.id;
+        // s += "value=" + i1.value;
+        // s += "class=" + i1.className;/*获取class属性 不太一样 classname*/
+        // s += "test=" + i1.getAttribute("test");/*自定义的属性 有2种方式；*/
+        // s += "test=" + i1.attributes["test"].nodeValue;
+        // console.log(s);
+        // document.getElementById("dom").innerHTML = s;
+    }
+
+    // // window.alert("dom测试");
+    // var v = document.getElementById("dom");
+    // // document.write(v);//元素节点
+    // // document.write("<br>");
+    // var attributes = v.attributes;//元素节点上的属性数组
+    // for (var i = 0; i < attributes.length; i++) {
+    //     //nodename： 节点名称：属性key   nodevalue 节点值：属性值  nodetype：节点类型
+    //     sys(attributes[i].nodeName + ":" + attributes[i].nodeValue);
+    // }
+    // sys(attributes["id"].nodeName + ":" + attributes["id"].nodeValue);
+    // var childNode = v.childNodes[0];
+    // sys(childNode.nodeName + ":" + childNode.nodeValue)
+    //
+    // sys(document.nodeName)
+    // sys(v.nodeName)//节点名称
+    // sys(v.attributes[0].nodeName)//属性名称
+    // sys(v.childNodes[0].nodeName)//内容节点名称
+    //
+    // sys(document.nodeValue)
+    // sys(v.nodeValue)//元素节点内容
+    // sys(v.attributes[0].nodeValue)//属性内容
+    // sys(v.childNodes[0].nodeValue)//内容节点名称
+    // sys("==================")
+    // sys(document.nodeType)//节点类型9
+    // sys(v.nodeType)// 节点类型1：元素 都是1
+    // sys(v.attributes[0].nodeType)//节点类型2  属性都是2
+    // sys(v.childNodes[0].nodeType)//节点类型3  文本都是 3   注释都是8  文档都是9
+    // sys("=====================")
+    // v.innerHTML = "文本内容";/*节点的innerhtml等价于v.childnodes[0].nodevalue*/
+</script>
+
+
+</body>
+</html>

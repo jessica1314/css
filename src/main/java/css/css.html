@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css</title>
+    <!--链接 css文件 stylesheet type 表明外联文档的类型是css-->  <!--link标签出现在head中-->
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <!--    <script rel="" type="application/javascript" src=""></script>-->
+</head>
+<body>
+<div class="nocontinue">
+    <span>有换行的span</span>
+    <span>有换行的span</span>
+    <span>有换行的span</span>
+</div>
+
+<div style="clear:both">13131</div> <!--clear:both 清除浮动元素-->
+
+<div id="abc">后续的内容</div>
+
+
+<!--<div id="div1">-->
+<!--    <div id="div2"> 无论蓝色div高度如何变化，绿色div都会贴在下面-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="left">左边固定宽度-->
+<!--</div>-->
+<!--<div class="right">左边固定宽度</div>-->
+<!--<div class="center">中间自适应</div>-->
+<!--&lt;!&ndash;<div id="d">&ndash;&gt;-->
+<!--    <img src="https://how2j.cn/example.gif">-->
+<!--</div>-->
+<!--<div id="d">line-height 适合单独一行垂直居中多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 多行内容 </div>-->
+
+<!--<div class="left">左边固定宽度</div>-->
+
+<!--<div class="right">右边自动填满</div>-->
+
+<!--<div> 默认情况下div会占用100%的宽度,所以无法观察元素是否居中</div>-->
+
+<!--<div style="width:300px;margin:0 auto">-->
+<!--    设置本div的宽度，然后再使用样式 margin: 0 auto来使得元素居中</div>-->
+
+<!--<span style="width:300px;margin:0 auto;display: block;text-align: center">-->
+<!--  span 是内联元素，无法设置宽度，所以不能通过margin:0 auto居中</span>-->
+
+<!--<div style="text-align: center">-->
+<!--    <span>span的居中可以通过放置在div中，然后让div text-align实现居中</span>-->
+<!--</div>-->
+<!--<div align="center"> &lt;!&ndash;内容居中&ndash;&gt;-->
+<!--    通过设置属性align="center" 居中的内容-->
+<!--</div>-->
+
+<!--<div style="text-align:center">-->
+<!--    通过样式style="text-align:center" 居中的内容-->
+<!--</div>-->
+<!--<table style="border: 1px solid red">-->
+<!--    <tr>-->
+<!--        <td><input type="text">-->
+<!--        </td>-->
+<!--        <td><input type="text">-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><input type="text">-->
+<!--        </td>-->
+<!--        <td><input type="text">-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<table style="border: 1px solid red">-->
+<!--    <tr>-->
+<!--        <td><input type="text">-->
+<!--        </td>-->
+<!--        <td><input type="text">-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><input type="text">-->
+<!--        </td>-->
+<!--        <td><input type="text">-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--display:block 让内联元素独占一行 设置宽和高
+    display:inline 内联 没有前后没有换行  宽和高设置无效；大小根据内容
+    div span  一个块级元素  一个内联元素
+    inline-block 需要行级元素  但是可以设置宽和高-->
+<!--<div class="d1">普通的div块</div>-->
+<!--<span>这是普通span</span> <span>这是普通span</span> <span>这是普通span</span>-->
+<!--<span class="d">这是span,被改造成了块级元素</span>-->
+<!--<div>-->
+<!--    菜单1-->
+<!--</div>-->
+<!--<div>-->
+<!--    菜单2-->
+<!--</div>-->
+<!--<div>-->
+<!--    菜单3-->
+<!--</div>-->
+
+<!--如果使用float就可以达到水平排列的效果，通常会用在菜单，导航栏等地方-->
+
+<!--如果超出了父容器，还会有自动换行的效果-->
+
+<!--<div id="floatingDiv">-->
+<!--    <div>-->
+<!--        菜单1-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        菜单2-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        菜单3-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        菜单4-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        菜单5-->
+<!--    </div>-->
+<!--    <div>-->
+<!--        菜单6-->
+<!--    </div>-->
+<!--</div>-->
+<!--<div>121212121dasdadasdadada</div>-->
+<!--<!-浮动float 进行向左向右 移动 直到他的外边缘碰到包含框或者另一个浮动框为止-->
+<!--属性 float：left right 和绝对定位一样脱离文档 不站空间&ndash;&gt;-->
+
+<!--<div>-->
+<!--    <img src="https://how2j.cn/example.gif" />-->
+
+<!--    <p> 当图片不浮动时，文字就会换行出现在下面-->
+<!--        当图片不浮动时，文字就会换行出现在下面-->
+<!--        当图片不浮动时，文字就会换行出现在下面-->
+<!--        当图片不浮动时，文字就会换行出现在下面-->
+<!--        当图片不浮动时，文字就会换行出现在下面-->
+<!--        当图片不浮动时，文字就会换行出现在下面-->
+<!--    </p>-->
+<!--</div>-->
+
+<!--<div>-->
+<!--    <img class="f" src="https://how2j.cn/example.gif" style="float: left;"/>-->
+
+<!--    <p class="pp"> 当图片浮动时，文字围绕着图片-->
+<!--        当图片浮动时，文字围绕着图片-->
+<!--        当图片浮动时，文字围绕着图片-->
+<!--        当图片浮动时，文字围绕着图片-->
+<!--        当图片浮动时，文字围绕着图片-->
+<!--    </p>-->
+<!--</div>-->
+
+
+<!--<div >正常文字1</div>-->
+<!--<div >正常文字2</div>-->
+<!--<div class="f">浮动的文字</div>-->
+<!--<div >正常文字4</div>-->
+<!--<div >正常文字5</div>-->
+<!--    <div class="absdiv">-->
+<!--        <p class="abs"><img src="example%20(1).gif" alt="这是图片"></p>-->
+<!--    </div>-->
+<!--    <p>正常文字g</p>-->
+
+<!--<div class="absdiv">-->
+<!--    这是一个定位了的div-->
+<!--    <p class="abs" >绝对定位的文字</p>-->
+<!--</div>-->
+<!--双击选中所有代码-->
+
+<!--&lt;!&ndash;绝对定位  position:absolute left top 定位&ndash;&gt;-->
+<!--<p>正常文字1</p>-->
+<!--<p>正常文字2</p>-->
+<!--<p class="abs">绝对定位的文字3</p>-->
+<!--<p>正常文字4</p>-->
+<!--<p>正常文字5</p>-->
+<!--<a href="" style="color: red">武器</a>-->
+<!--<a href="">护甲</a>-->
+<!--<a href="">英雄</a>-->
+<!--<div class="menu">-->
+<!--    <a class="h2" href="">盖伦</a>-->
+<!--    <a class="h2" href="">提莫</a>-->
+<!--    <a class="h2" href="">安妮</a>-->
+<!--    <a class="h2" href="">死歌</a>-->
+<!--</div>-->
+
+<!--伪类 4种状态 -->
+<!--<a href="http://www.12306.com" target="_blank">超链的不同状态</a>-->
+<!--<div>-->
+<!--    其他元素-->
+<!--</div>-->
+<!--<span>12121</span>-->
+<!--<div class="box">-->
+<!--    内容宽度70px <br><br>-->
+<!--    内边距：5px <br> <br>-->
+<!--    外边距：10px <br>-->
+<!--</div>-->
+
+<!--<div>-->
+<!--    其他元素-->
+<!--</div>-->
+<!--元素外边距 margin 元素边框和其他元素边框之间的距离-->
+<!--元素内边距 元素的内容与最近的元素边框的距离 padding: 上 右 下 左 -->
+<!--span 内联元素 只有左右外边距  没有上下边距 -->
+<!--<span class="red"> 无内边距的span  </span><br/> <br/>-->
+<!--<div class="pad-left"> 左边距为50的span</div>-->
+<!--<br/>-->
+
+<!--<div>-->
+<!--</div>-->
+<!--<table>-->
+<!--    <tr>-->
+<!--        <td>商品</td>-->
+<!--        <td>数量</td>-->
+<!--        <td>价格</td>-->
+<!--        <td>小记</td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--表格斑马线-->
+<!--<table>-->
+<!--    <tr class="head">-->
+<!--        <td>id</td>-->
+<!--        <td>名称</td>-->
+<!--        <td>血量</td>-->
+<!--        <td>伤害</td>-->
+<!--    </tr>-->
+<!--    <tr class="odd">-->
+<!--        <td>1</td>-->
+<!--        <td>gareen</td>-->
+<!--        <td>340</td>-->
+<!--        <td>58</td>-->
+<!--    </tr>-->
+<!--    <tr class="even">-->
+<!--        <td>2</td>-->
+<!--        <td>teemo</td>-->
+<!--        <td>320</td>-->
+<!--        <td>76</td>-->
+<!--    </tr>-->
+<!--    <tr class="odd">-->
+<!--        <td>3</td>-->
+<!--        <td>annie</td>-->
+<!--        <td>380</td>-->
+<!--        <td>38</td>-->
+<!--    </tr>-->
+<!--    <tr class="even">-->
+<!--        <td>4</td>-->
+<!--        <td>deadbrother</td>-->
+<!--        <td>400</td>-->
+<!--        <td>90</td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<table width="80%" style="border-collapse:separate">-->
+<!--    <tr>-->
+<!--        <td>id</td>-->
+<!--        <td>名称</td>-->
+<!--        <td>血量</td>-->
+<!--        <td>伤害</td>-->
+<!--    </tr>-->
+<!--    <tr class="tr4">-->
+<!--        <td>1</td>-->
+<!--        <td>gareen</td>-->
+<!--        <td>340</td>-->
+<!--        <td>58</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>2</td>-->
+<!--        <td>teemo</td>-->
+<!--        <td>320</td>-->
+<!--        <td>76</td>-->
+<!--    </tr>-->
+<!--    <tr class="tr4">-->
+<!--        <td>3</td>-->
+<!--        <td>annie</td>-->
+<!--        <td>380</td>-->
+<!--        <td>38</td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>4</td>-->
+<!--        <td>deadbrother</td>-->
+<!--        <td>400</td>-->
+<!--        <td>90</td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<div class="lefttop">-->
+<!--    左边和上边都有边框-->
+<!--</div>-->
+<!--<br>-->
+<!--<div class="alldirection">-->
+<!--    四边都有边框　-->
+<!--</div>-->
+
+<!--边框效果 border-style 实线 虚线 点状 双线-->
+<!--<div > 默认无边框div</div>-->
+
+<!--<div class="solid" style="border-color: red"> 实线边框</div>-->
+<!--<br/>-->
+<!--<p style="width: 50%">121313</p>-->
+<!--<br>-->
+<!--<div class="dotted"> 点状边框</div>-->
+<!--<br>-->
+<!--<div class="dashed"> 虚线边框</div>-->
+<!--<br>-->
+<!--<div class="double"> 双线边框</div>-->
+<!--表格边框 border-collapse-->
+<!--表格的样式 -->
+<!--<table class="t1" border="1" width="50%">-->
+<!--    <tr>-->
+<!--        <td width="10%">a</td>-->
+<!--        <td width="90%">abc</td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<br>-->
+<!--<table class="t2" border="1" width="50%">-->
+<!--    <tr>-->
+<!--        <td width="50%">我市积极实施堵塞打打的阿萨是的啊打</td>-->
+<!--        <td>abc</td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--<!-字体大小 font-size&ndash;&gt;-->
+<!--<p>正常大小</p>-->
+<!--<p class="big">30px大小的文字</p>-->
+<!--<p class="small">50%比例的文字</p>-->
+<!--<p class="small2">0.5em 等同于 50%比例的文字</p>-->
+<!--&lt;!&ndash;单词大小写 text-transform&ndash;&gt;-->
+<!--<p class="u" style="white-space:normal">-->
+<!--    abcD-->
+<!--</p>-->
+
+<!--<p class="c">-->
+<!--    abcD-->
+<!--</p>-->
+
+<!--<p class="l">-->
+<!--    abcD-->
+<!--</p>-->
+<!--单词缩进 text-indent-->
+<!--单词间距 word-spacing-->
+<!--字符间距 letter-spacing-->
+<!--<p>-->
+<!--    abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg-->
+<!--</p>-->
+
+<!--<p class="p" >-->
+<!--    abcdefg abcdefg abcdefg abcdefg abcdefg abcdefg-->
+<!--</p>-->
+</body>
+</html>
